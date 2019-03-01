@@ -11,6 +11,12 @@ This repository contains the 2017 version of the OnSSET tool, implemented in Pyt
 
 Further, a document called "How to Run Instructions" is available.
 
+### Branches
+
+This repository contains two branches, **master** and **Updated version 2018**.
+* The master branch contains the 2017 version of the OnSSET code
+* The Updated version 2018 branch has a slightly modified version of the code from June 2018. The functionality of the updated code is the same as in the master branch (they give the same results within ~1%), but with faster running times and a modified method of selecting input files.
+
 ### How-to-use Instructions
 
 To be able to run the code you need to have Python 3 installed, along with a number of packages. The easiest way to get the packages needed may be to download Anaconda. Follow the below steps to use the tool:
