@@ -5,10 +5,10 @@
 # Python version: 3.5
 
 import os
-from pyonsset.onsset import *
+from onsset import *
 
-os.chdir('..')
-os.chdir('db')
+# os.chdir('..')
+# os.chdir('db')
 
 specs_path = str(input('Enter the name of the specs file: '))
 specs = pd.read_excel(specs_path, index_col=0)
