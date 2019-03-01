@@ -4,12 +4,18 @@ The 2017 version of the Open Source Spatial Electrification Tool (OnSSET), devel
 ### Content
 
 This repository contains the 2017 version of the OnSSET tool, implemented in Python. To tun the tool four files are needed; two Python files and two input files.
-1) onsset.py. This file contains all the methods used to perform the calculations of the OnSSET tool.
-2) runner.py. This file is used to read the input files, and use the methods defined in onsset.py to calculate the least-cost investment scenarios.
-3) Specs.xlsx. This input file contains key data relating to the country or region to be studied.
-4) Togo.csv. This input file contains the GIS data extracted to .csv format required to run the analysis, for Togo.
+1) **onsset.py**. This file contains all the methods used to perform the calculations of the OnSSET tool.
+2) **runner.py**. This file is used to read the input files, and use the methods defined in onsset.py to calculate the least-cost investment scenarios.
+3) **Specs.xlsx**. This input file contains key data relating to the country or region to be studied.
+4) **Togo.csv**. This input file contains the GIS data extracted to .csv format required to run the analysis, for Togo.
 
 Further, a document called "How to Run Instructions" is available.
+
+### Branches
+
+This repository contains two branches, **master** and **Updated version 2018**.
+* The **master** branch contains the 2017 version of the OnSSET code
+* The **Updated version 2018** branch has a slightly modified version of the code from June 2018. The functionality of the updated code is the same as in the master branch (they give the same results within ~1%), but with faster running times and a modified method of selecting input files.
 
 ### How-to-use Instructions
 
