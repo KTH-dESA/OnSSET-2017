@@ -29,3 +29,5 @@ To be able to run the code you need to have Python 3 installed, along with a num
 Find more information about the OnSSET tool at www.onsset.org and the user manual at https://onsset-manual.readthedocs.io/en/latest/.
 
 To create the input .csv file for another country, information and code can be found here: https://github.com/KTH-dESA/GIS-extraction_for_OnSSET
+
+For any additional information please contact the KTH team here: http://www.onsset.org/contact--forum.html
