@@ -15,9 +15,14 @@ Further, a document called "How to Run Instructions" is available.
 
 To be able to run the code you need to have Python 3 installed, along with a number of packages. The easiest way to get the packages needed may be to download Anaconda. Follow the below steps to use the tool:
 
-1. Clone the repository (or download the four files) to a folder on your computer.
-2. Run the runner.py file.
-3. Follow the instructions in the "How to Run Instructions" document.
+1. Clone repository in a directory of your preference
+2. Open onsset.py and runner.py in the IDE of your preference (Pycharm is suggested)
+3. Install dependencies
+4. Make sure that specs.csv and Country.csv (e.g. Togo.csv) files are in the same directory. Both files shall follow the format and naming convention as shown in the sample files in this repository. Parameter values can be changed accordingly
+5. Run onsset.py and make sure there is no error
+6. Run runner.py a. Select to calibrate the Country.csv as per instructions b. After calibration (taking place only once) start running scenarios as per instructions.
+7. After a scenario is run two output files will appear in the directory; one containing full results and another providing a summary.
+8. Import the full result scv file into a GIS environment (QGIS, ArcMap) to vizualize the results.
 
 ### Supplementary material
 
