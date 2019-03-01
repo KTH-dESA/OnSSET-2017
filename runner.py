@@ -19,7 +19,7 @@ specs_path = filedialog.askopenfilename()
 
 specs = pd.read_excel(specs_path, index_col=0)
 
-coordinate_units = 1000 # 1000 if coordinates are in m, 1 if coordinates are in km
+coordinate_units = 1 # 1000 if coordinates are in m, 1 if coordinates are in km
 
 # specs_directory = str(input('Enter the directory of the specs file: '))
 # os.chdir(specs_directory)
