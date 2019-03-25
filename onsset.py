@@ -358,6 +358,8 @@ class SettlementProcessor:
         self.df[SET_HYDRO_DIST] = pd.to_numeric(self.df[SET_HYDRO_DIST], errors='coerce')
         self.df[SET_HYDRO] = pd.to_numeric(self.df[SET_HYDRO], errors='coerce')
         self.df[SET_SOLAR_RESTRICTION] = pd.to_numeric(self.df[SET_SOLAR_RESTRICTION], errors='coerce')
+        self.df[SET_SOLAR_RESTRICTION] = 1
+        # self.df[SET_SOLAR_RESTRICTION] = pd.to_numeric(self.df[SET_SOLAR_RESTRICTION], errors='coerce')
 
         logging.info('Replace null values with zero')
         self.df.fillna(0, inplace=True)
