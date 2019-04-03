@@ -42,7 +42,6 @@ SET_SUBSTATION_DIST = 'SubstationDist'
 SET_ELEVATION = 'Elevation'  # in metres
 SET_SLOPE = 'Slope'  # in degrees
 SET_LAND_COVER = 'LandCover'
-SET_SOLAR_RESTRICTION = 'SolarRestriction'
 SET_ROAD_DIST_CLASSIFIED = 'RoadDistClassified'
 SET_SUBSTATION_DIST_CLASSIFIED = 'SubstationDistClassified'
 SET_ELEVATION_CLASSIFIED = 'ElevationClassified'
@@ -357,9 +356,6 @@ class SettlementProcessor:
         self.df[SET_ROAD_DIST] = pd.to_numeric(self.df[SET_ROAD_DIST], errors='coerce')
         self.df[SET_HYDRO_DIST] = pd.to_numeric(self.df[SET_HYDRO_DIST], errors='coerce')
         self.df[SET_HYDRO] = pd.to_numeric(self.df[SET_HYDRO], errors='coerce')
-        self.df[SET_SOLAR_RESTRICTION] = pd.to_numeric(self.df[SET_SOLAR_RESTRICTION], errors='coerce')
-        self.df[SET_SOLAR_RESTRICTION] = 1
-        # self.df[SET_SOLAR_RESTRICTION] = pd.to_numeric(self.df[SET_SOLAR_RESTRICTION], errors='coerce')
 
         logging.info('Replace null values with zero')
         self.df.fillna(0, inplace=True)
@@ -985,7 +981,7 @@ class SettlementProcessor:
                                             people=row[SET_POP_FUTURE],
                                             num_people_per_hh=row[SET_NUM_PEOPLE_PER_HH],
                                             capacity_factor=row[SET_GHI] / HOURS_PER_YEAR)
-            if (row[SET_SOLAR_RESTRICTION] == 1 and row[SET_GHI] > 1000) else 99,
+            if row[SET_GHI] > 1000 else 99,
             axis=1)
 
         logging.info('Calculate minigrid wind LCOE')
